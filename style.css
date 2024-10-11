@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.container-fluid {
+    overflow-x: hidden; /* Prevent horizontal overflow for this container */
+}
+
+.main-content {
+    height: 80px; /* Adjust this value based on your text size */
+    display: flex; /* Center content vertically */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.display-text {
+    font-size: 70px;
+    background: linear-gradient(90deg, #00ff99, #00ccff, #ff66b2, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blink 0.7s step-end infinite; /* Blinking effect */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+    transition: transform 0.3s ease;
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+
+
+
+#home {
+    padding-bottom: 100px;
+    background-image: url("./images/main.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+
+.image-with-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: aliceblue;
+    font-size: 2.5rem; /* Responsive font size */
+}
+
+.main-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-image img {
+    border-radius: 50%;
+    border: 5px solid whitesmoke;
+    height: 300px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .main-content {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+    
+    .main-image img {
+        max-height: 200px;
+    }
+    
+    .image-with-content {
+        flex-direction: column;
+    }
+}
+
+
+
+#about-image {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    min-height: 400px; /* Ensure a minimum height */
+    max-height: 600px; /* Optional: limit max height */
+    object-fit: cover; /* Cover the area without distortion */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+#about h2{
+    text-align: center;
+}
+#about-content{
+    padding-right: 100px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    align-items: center; /* Center alignment */
+    justify-content: space-between; /* Space between items */
+}
+
+@media (min-width: 768px) {
+    #about-image {
+        /* min-height: 300px; Adjust for medium screens */
+        margin-left: -140px;
+
+    }
+}
+
+@media (max-width: 576px) {
+    #about-image {
+        /* min-height: 200px; Further adjust for smaller screens */
+        padding-right: 50px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+.skill-card {
+    margin-bottom: 1rem;
+    border: 1px solid #F0ECE3;#about-image {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the area without distortion */
+}
+
+@media screen and (min-width: 768px) {
+    #about-image {
+        max-height: 300px; /* Adjust height for larger screens if needed */
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #about-image {
+        max-height: 400px; /* Limit height on larger screens */
+    }
+}
+
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    background: linear-gradient(#add8e6, whitesmoke);
+}
+
+.skill-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
+    transform: scale(1.05);
+}
+
+.skill-card .card-img {
+    padding: 10px;
+    border-bottom: 1px solid #F0ECE3;
+    display: flex;
+    align-items: center;
+}
+
+.skill-card .card-img img {
+    margin: auto;
+    width: auto;
+    height: 180px;
+}
+
+.skill-card .card-body h4 {
+    color: #000;
+    font-size: 1rem;
+    text-align: center;
+}
+
+input, textarea {
+    width: 100%; 
+    height: 40px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: aliceblue;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+}
+
+.education-heading {
+    margin: 20px 0;
+}
+
+.education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.box {
+    width: 100%;
+    border: 2px solid gray;
+    border-radius: 20px;
+    background: linear-gradient(lightgray, whitesmoke);
+    margin: 4px;
+    padding: 10px 0 0 10px;
+}
+
+#contact-image {
+    width: 100%; /* Make image take the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 300px; /* Optional: limit height for large screens */
+    object-fit: cover; /* Ensure image covers the area without distortion */
+    padding-right: 0; /* Remove padding for smaller screens */
+}
+
+#contact-info button {
+    background-color: #3cb51e;
+}
+
+.myForm button {
+    margin-bottom: 15px;
+}
+
+.Last {
+    margin-top: 30px;
+    background-color: #001f3f;
+    padding: 20px; 
+}
+
+.box-container {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.box-last {
+    flex: 1; 
+    margin: 10px; 
+    padding: 20px; 
+    background-color: #001f3f; 
+    color: #ffffff; 
+    transition: transform 0.2s; 
+}
+
+.box-last a {
+    padding: 2px;
+    margin: 10px;
+    color: #ffffff; 
+    text-decoration: none; 
+    transition: color 0.2s, background-color 0.2s; 
+    border-radius: 5px; 
+}
+
+.box-last a:hover {
+    color: #001f3f; 
+    background-color: #45ab2b; 
+}
+
+.box-last:hover {
+    transform: translateY(-5px); 
+}
+
+.box-last h3 {
+    margin-bottom: 15px; 
+}
+
+.share a {
+    margin-right: 10px; 
+    color: #ffffff; 
+    transition: color 0.2s; 
+}
+
+.share a:hover {
+    color: #007bff; 
+}
+
+.credit {
+    text-align: center; 
+    margin-top: 20px; 
+    font-size: 14px; 
+    color: #ffffff; 
+}
+
+/* Additional Media Queries for better responsiveness */
+@media screen and (max-width: 576px) {
+    .main-content {
+        font-size: 1.2rem; /* Further reduce font size for extra small screens */
+    }
+    
+    .Last, .box-last {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+    
+    #contact-image {
+        padding-right: 0; /* Remove padding for smaller screens */
+        height: auto; /* Allow height to adjust */
+    }
+    
+    .box-last {
+        flex-basis: 100%; /* Full width for boxes */
+    }
+}

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Aman Pandey </title>
+</head>
+
+<body onload="beginning()">
+    <div class="container-fluid">
+        <div class="row" id="home">
+            <div class="col-12 p-0">
+                <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+                    <a class="navbar-brand logo-margin" href="#" style="margin: 3px 3px 3px 25px;">
+                        <img src="./images/aman.png" alt="Aman Pandey" width="35" height="35">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item me-3"><a class="nav-link active text-white" href="#home">Home</a></li>
+                            <li class="nav-item me-3"><a class="nav-link text-white" href="#about">About me</a></li>
+                            <li class="nav-item me-3"><a class="nav-link text-white" href="#skills">Skills</a></li>
+                            <li class="nav-item me-3"><a class="nav-link text-white" href="#education">Education</a></li>
+                            <li class="nav-item me-3"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="image-with-content">
+                <div class="main-image">
+                    <img src="./images/aman.png" alt="Aman Modified" loading="eager">
+                </div>
+                <!-- <div class="main-content">
+                    <p><b style="font-size: 70px;color:chartreuse">Welcome to my world</b><br>PROGRAMMER || ALGORITHMIST || DEVELOPER</p>
+                </div> -->
+                <p class="display-text" ><b>Welcome to my world <br></b></p>
+                <div class="main-content">
+                    <p id="display-text" class="display-text" style="font-size: 50px;"></p>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="container-fluid m-4" id="about">
+            <div class="row mt-6 about-container">
+                <div class="col-md-5 offset-md-1"> <!-- Increased column width -->
+                    <img src="./images/Study.jpg" alt="" id="about-image">
+                </div>                
+                <div class="col-md-6 offset-md-0" id="about-content"> <!-- Adjusted column width -->
+                    <h2>SOFTWARE DEVELOPER & DATA SCIENCE PROFESSIONAL</h2>
+                    <p style="text-align: justify;">
+                        👋 Hi, I'm <b>Aman Pandey!</b><br><br>
+                        🎓 I hold a Bachelor's degree in Computer Applications (BCA) and am currently pursuing my Master's in Computer Applications (MCA) at Vellore Institute of Computer Studies.<br>
+                        💻 My passion lies in programming, excelling in languages such as <b>Java, Python, C, and C++</b>. I enjoy solving complex problems and building innovative solutions.<br>
+                        🏆 I was the first runner-up in a coding event hosted by my college, where I showcased my skills and collaborated with fellow enthusiasts.<br>
+                        🔍 I’m an avid problem solver on LeetCode, where I continuously challenge myself to improve my coding skills and algorithms.<br>
+                        🌟 I’m proud to have secured a position at <b>Deloitte</b>, where I aim to contribute to impactful projects and drive technological innovation.<br>
+                        🚀 Join me as I explore the vast realms of technology, contribute to meaningful projects, and grow both professionally and personally. Let's connect! 🌐
+                    </p>
+                    <a href="./images/Resume.pdf">
+                        <button type="button" class="btn btn-primary">View My Resume</button>
+                    </a>
+                </div>                   
+            </div>
+        </div>
+        
+                
+
+        <div class="container-fluid" id="skills">
+            <div class="row justify-content-center p-4" style="background-color: rgb(128, 128, 128);">
+                <div class="col-12 text-center py-5 m-4">
+                    <h2 style="font-size: 50px;">My skills</h2>
+                </div>
+                <!-- Skill Cards -->
+                <div class="col-6 col-md-3">
+                    <div class="card skill-card">
+                        <div class="card-img">
+                            <img src="./images/html.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h4>HTML</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card skill-card">
+                        <div class="card-img">
+                            <img src="./images/css.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h4>CSS</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card skill-card">
+                        <div class="card-img">
+                            <img src="./images/javascript.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h4>JAVASCRIPT</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card skill-card">
+                        <div class="card-img">
+                            <img src="./images/bootstrap.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h4>BOOTSTRAP</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card skill-card">
+                        <div class="card-img">
+                            <img src="./images/java.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h4>JAVA</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card skill-card">
+                        <div class="card-img">
+                            <img src="./images/python.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h4>PYTHON</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card skill-card">
+                        <div class="card-img">
+                            <img src="./images/DSA.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h4>Data Structure & Algoritham</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card skill-card">
+                        <div class="card-img">
+                            <img src="./images/react.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h4>React</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card skill-card">
+                        <div class="card-img">
+                            <img src="./images/node.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h4>Node JS</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card skill-card">
+                        <div class="card-img">
+                            <img src="./images/sql.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h4>SQL</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card skill-card">
+                        <div class="card-img">
+                            <img src="./images/mongodb.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h4>MongoDB</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="education" id="education">
+            <div class="education-heading">
+                <h1>Educational Qualification</h1>
+            </div>
+            <div class="box">
+                <h4>Master in Computer Applications</h4>
+                <p>Vellore Institute of Computer Studies</p>
+                <p>2023-2025</p>
+            </div>
+            <div class="box">
+                <h4>Bachelor in Computer Applications</h4>
+                <p>Dr. Virendra Swarup Institute of Computer Studies</p>
+                <p>2020-2023</p>
+            </div>
+            <div class="box">
+                <h4>Intermediate</h4>
+                <p>Chacha Nehru Smarak Inter College</p>
+                <p>2019-2020</p>
+            </div>
+            <div class="box">
+                <h4>High School</h4>
+                <p>Chacha Nehru Smarak Inter College</p>
+                <p>2017-2018</p>
+            </div>
+        </div>
+
+        <div class="container-fluid" id="contact">
+            <div class="row justify-content-center align-items-center bg-secondary" style="margin-top: 50px;">
+                <div class="col-12">
+                    <h2 style="text-align: center; margin-top: 20px;">Contact me</h2>
+                </div>
+                <div class="col-md-6 px-3" id="contact-info">
+                    <form class="myForm" onsubmit="return Connection(event);">
+                        <p style="color: aliceblue; padding-top: 20px;">Send me a Message</p>
+                        <div id="name-error" class="error-message"></div>
+                        <input type="text" placeholder="Your name" id="name" required><br><br>
+                        
+                        <div id="email-error" class="error-message"></div>
+                        <input type="email" placeholder="Your email" id="email" required><br><br>
+                        
+                        <div id="message-error" class="error-message"></div>
+                        <textarea placeholder="Message" name="message" id="message" cols="50" rows="5" required></textarea><br><br>
+                        
+                        <button class="btn btn-success" type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-3 offset-md-2">
+                    <img src="./images/contact.png" alt="" id="contact-image">
+                </div>               
+            </div>
+        </div>        
+
+        <section class="Last">
+            <div class="box-container">
+                <div class="box-last">
+                    <h3>Aman's Portfolio</h3>
+                    <p>Thank you for taking the time to explore my personal portfolio website. 😊</p>
+                    <p>I invite you to connect with me through my social channels. 📱💬</p>
+                    <p>Wishing you continued success and growth! 🌱✨ I look forward to engaging in conversation. 🤝</p>
+                </div>
+                <div class="box-last">
+                    <h3>Quick Links</h3>
+                    <div id="links">
+                        <a href="#home"><i class="fas fa-chevron-circle-right"></i> Home</a><br>
+                        <a href="#about" class="about-link"><i class="fas fa-chevron-circle-right"></i> About</a><br>
+                        <a href="#skills"><i class="fas fa-chevron-circle-right"></i> Skills</a><br>
+                        <a href="#education"><i class="fas fa-chevron-circle-right"></i> Education</a><br>
+                        <a href="#contact"><i class="fas fa-chevron-circle-right"></i> Contact</a>
+                    </div>
+                </div>
+                
+                <div class="box-last">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +91 8707057300</p>
+                    <p><i class="fas fa-envelope"></i> pandeyaman8957@gmail.com</p>
+                    <p><i class="fas fa-map-marked-alt"></i> Kanpur, India</p>
+                    <div class="share">
+                        <a href="https://www.linkedin.com/in/amanpandey7300/" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+                        <a href="https://github.com/Siddhant7300" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+                        <a href="mailto:siddhantpandey7300@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+                        <a href="#" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
+                        <a href="#" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+            <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/amanpandey7300/">Aman Pandey</a></h1>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
